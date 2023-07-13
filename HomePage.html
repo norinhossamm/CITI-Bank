@@ -1,0 +1,460 @@
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CITI Bank!</title>
+    <link rel="stylesheet" href="HomePage.css">
+    
+    <!--Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caprasimo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ruda">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Markazi Text">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mitr">
+
+    <!--Icon-->
+    <link rel="icon" href="images/Icon.png" >
+
+    <!--Imports-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+ 
+<!--Header-->
+  <header>
+      <nav class="navbar navbar-expand-sm fixed-top navbar-light" style="position:absolute;">
+          <div class="container">
+            <b> <a class="navbar-brand" href="HomePage.html" style="font-size: 35px; color:white; font-family:'Cinzel';">Citi Bank</a> </b>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar1">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="HomePage.html" style="font-size:20px; color:white; font-family:'Ruda';" >Home</a> 
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#TeamSection" style="font-size:20px; color:white; font-family:'Ruda';">Team</a>
+                    </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#ServiceSection" style="font-size:20px; color:white; font-family:'Ruda';">Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#BranchSection" style="font-size:20px; color:white; font-family:'Ruda';">Branches</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#ContactSection" style="font-size:20px; color:white;; font-family:'Ruda';">Contact</a>
+                      </li>   
+                  </ul>
+              </div>
+          </div>
+      </nav>  
+  </header>
+
+  <!-- Carousel-->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/bankbgcolor.jpg" class="d-block w-100" style="height:100vh; object-fit:cover; filter:brightness(0.5);">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-size:55px; font-family:'Caprasimo';color:white;">CHECK YOUR BALANCE</h5>
+          <p style="font-size:30px; font-family: 'Markazi Text';">"Citi. Live Richly "</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/money.avif" class="d-block w-100" style="height:100vh; object-fit:cover; filter:brightness(0.5);">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-size:55px; font-family:'Caprasimo';color:white;">TRANSFER MONEY</h5>
+          <p style="font-size:30px; font-family: 'Markazi Text';">"Your first choice for monetary needs"</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/History.jpg" class="d-block w-100" style="height:100vh; object-fit:cover;   filter:brightness(0.5);">
+        <div class="carousel-caption d-none d-md-block">
+          <h5  style="font-size:55px; font-family:'Caprasimo';color:white;">TRANSACTION HISTORY</h5>
+          <p style="font-size:30px; font-family: 'Markazi Text';">"It's our pleasure to work with you"</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <!--About-->
+  <div class="About" id="AboutSection" style="position:relative; top:8%;">
+    <h5 class="AboutTitle">ABOUT US</h5> 
+    <div class="underlineabout"></div>
+    <div class="AboutContain" style="position:relative; top:15%;">
+        <div class="thumbanail right">
+          <img src="images/Employees.avif" alt="" />
+        </div> 
+        <h4>We make it easier for you!</h4>
+        <p>
+          Citibank, also known as Citi, is a global financial institution that provides a wide range of financial products and services to individuals, businesses, and governments. Founded in 1812 as the City Bank of New York, Citi has a long history of innovation and has played a significant role in the development of modern banking.
+        </p>
+        <p>
+          Today, Citi operates in more than 160 countries and jurisdictions, serving over 200 million customer accounts and employing over 200,000 people worldwide. The bank offers a variety of services, including banking, credit cards, loans, mortgages, investment products, and wealth management.
+
+Citi's banking services include checking and savings accounts, as well as online and mobile banking options. The bank also offers credit cards with a range of rewards and benefits, including cash back, points, and miles.
+
+For those seeking loans, Citi provides personal loans, student loans, and home loans, as well as small business loans and lines of credit. The bank's mortgage services include refinancing, home equity loans, and reverse mortgages.
+        </p>
+    </div>
+  </div>
+
+
+  <!--Meet the Team--> 
+   <section id="TeamSection" class="team section-bg" style="position:relative;top:6%;">
+    <div class="container">
+      <div class="section-title">
+        <h2 style="color:#5b828e; font-family:'Mitr';">Meet The Team</h2>
+        <div class="underlineteam"></div>
+        <p>Our successful company team is made up of a diverse group of individuals with a wide range of skills, experiences, and backgrounds.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="member d-flex align-items-start" >
+            <div class="teampic"><img src="images/EMP1.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Emily Davis</h4>
+              <span>Chief Executive Officer</span>
+              <p>Emily Davis is a dynamic and experienced CEO who has a proven track record of success in leading organizations to achieve their goals.</p>
+              <div class="social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""> <i class="fab fa-linkedin"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="member d-flex align-items-start" >
+            <div class="teampic"><img src="images/EMP2.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Elizabeth Gracia</h4>
+              <span>Full-stack developer</span>
+              <p>Elizabeth Gracia is a talented and experienced full stack developer, with a passion for building innovative and user-friendly web applications.</p>
+              <div class="social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""> <i class="fab fa-linkedin"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4">
+          <div class="member d-flex align-items-start" >
+            <div class="teampic"><img src="images/EMP3.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Benjamin Park</h4>
+              <span>Senior software engineer</span>
+              <p>Benjamin Park is a highly skilled and experienced senior software engineer, with a passion for designing and developing complex software systems.</p>
+              <div class="social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""> <i class="fab fa-linkedin"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4">
+          <div class="member d-flex align-items-start" >
+            <div class="teampic"><img src="images/EMP4.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>William Chen</h4>
+              <span>Data analyst</span>
+              <p>William Chen is an accomplished data analyst with a rich and diverse experience in data analytics, statistics, and machine learning.</p>
+              <div class="social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""> <i class="fab fa-linkedin"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Our Services-->
+  <section id="ServiceSection" class="services">
+    <h2 class="section-heading">OUR SERVICES</h2>
+    <div class="underlineservices"></div>
+    <div class="services-container">
+      <div class="service">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg width="80" height="80" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M748.6 612.8l52.6-50.8c-43.5-45.1-95.5-78.7-152.6-99.3 49.4-40.3 81.1-101.6 81.1-170.2 0-121-98.4-219.4-219.4-219.4s-219.4 98.4-219.4 219.4c0 69.1 32.1 130.8 82.1 171.1-153.7 56.6-263.6 204.5-263.6 377.7h73.1c0-181.5 147.7-329.1 329.1-329.1 90.2-0.1 174.4 35.7 237 100.6zM510.3 146.3c80.7 0 146.3 65.6 146.3 146.3S591 438.9 510.3 438.9 364 373.2 364 292.6s65.6-146.3 146.3-146.3zM692.7 679.2l160.9 160.9 58.9-219.8-219.8 58.9z m132.5 54.9l-26.5-26.5 36.3-9.7-9.8 36.2zM616.2 913.9L836 855 675.1 694.1l-58.9 219.8z m87.3-113.8l26.5 26.5-36.3 9.7 9.8-36.2z" fill="#0F1F3C" /></svg> 
+        <h4 style="color: #5b828e; font-family: 'Mitr';">View All Customers</h4>
+        <p>
+          The "view all customers" service on a CITI bank's webpage typically allows authorized bank personnel to see a list of all the customers who have accounts with the bank.
+        </p>
+        <button type="button" class="btn btn-light">  <a href="Customers.php" class="btn">Explore</a> </button>
+      </div>
+      <div class="service">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <svg fill="#000000" height="80" width="80" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+          viewBox="0 0 512 512" xml:space="preserve">
+        <g>
+          <g>
+            <path d="M256,0C114.842,0,0,114.842,0,256s114.842,256,256,256s256-114.842,256-256S397.158,0,256,0z M256,467.478
+              C139.39,467.478,44.522,372.61,44.522,256S139.39,44.522,256,44.522S467.478,139.39,467.478,256S372.61,467.478,256,467.478z"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <path d="M256,72.348C154.739,72.348,72.348,154.739,72.348,256S154.739,439.652,256,439.652S439.652,357.261,439.652,256
+              S357.261,72.348,256,72.348z M263.805,241.239c23.794,12.576,53.413,28.239,53.413,59.283c0,27.956-18.869,51.548-44.522,58.842
+              v7.94c0,9.217-7.479,16.696-16.696,16.696c-9.217,0-16.696-7.479-16.696-16.696v-7.94c-25.652-7.294-44.522-30.886-44.522-58.842
+              c0-9.217,7.479-16.696,16.696-16.696s16.696,7.479,16.696,16.696c0,15.348,12.478,27.826,27.826,27.826
+              s27.826-12.478,27.826-27.826c0-10.935-18.109-20.5-35.631-29.761c-23.794-12.576-53.413-28.239-53.413-59.283
+              c0-27.956,18.869-51.548,44.522-58.842v-7.94c0-9.217,7.479-16.696,16.696-16.696c9.217,0,16.696,7.479,16.696,16.696v7.94
+              c25.652,7.294,44.522,30.886,44.522,58.842c0,9.217-7.479,16.696-16.696,16.696s-16.696-7.479-16.696-16.696
+              c0-15.348-12.478-27.826-27.826-27.826s-27.826,12.478-27.826,27.826C228.174,222.413,246.283,231.978,263.805,241.239z"/>
+          </g>
+        </g>
+        </svg>
+        <h4 style="color:#5b828e; font-family: 'Mitr';">Make a Transaction</h4>
+        <p>
+          The "make a transaction" service on CITI bank's webpage allows customers to perform various types of banking transactions online, such as transferring funds between accounts, paying bills.
+        </p>
+        <button type="button" class="btn btn-light">  <a href="Transaction.php" class="btn">Explore</a> </button>
+      </div>
+      <div class="service">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.01112 11.5747L6.29288 10.2929C6.68341 9.90236 7.31657 9.90236 7.7071 10.2929C8.09762 10.6834 8.09762 11.3166 7.7071 11.7071L4.7071 14.7071C4.51956 14.8946 4.26521 15 3.99999 15C3.73477 15 3.48042 14.8946 3.29288 14.7071L0.292884 11.7071C-0.0976406 11.3166 -0.0976406 10.6834 0.292884 10.2929C0.683408 9.90236 1.31657 9.90236 1.7071 10.2929L3.0081 11.5939C3.22117 6.25933 7.61317 2 13 2C18.5229 2 23 6.47715 23 12C23 17.5228 18.5229 22 13 22C9.85817 22 7.05429 20.5499 5.22263 18.2864C4.87522 17.8571 4.94163 17.2274 5.37096 16.88C5.80028 16.5326 6.42996 16.599 6.77737 17.0283C8.24562 18.8427 10.4873 20 13 20C17.4183 20 21 16.4183 21 12C21 7.58172 17.4183 4 13 4C8.72441 4 5.23221 7.35412 5.01112 11.5747ZM13 5C13.5523 5 14 5.44772 14 6V11.5858L16.7071 14.2929C17.0976 14.6834 17.0976 15.3166 16.7071 15.7071C16.3166 16.0976 15.6834 16.0976 15.2929 15.7071L12.2929 12.7071C12.1054 12.5196 12 12.2652 12 12V6C12 5.44772 12.4477 5 13 5Z" fill="#000000"/>
+        </svg>
+        <h4 style="color:#5b828e;  font-family: 'Mitr';">Transaction History</h4>
+        <p>
+          The "transaction history" service on CITI bank's webpage allows customers to view a record of all their past transactions, such as deposits, withdrawals, transfers, and payments.
+        </p>
+        
+        <button type="button" class="btn btn-light">  <a href="TransactionHistory.php" class="btn">Explore</a> </button>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+  <!--Branches-->
+  <section id="BranchSection">
+    <div>
+      <h5>BRANCHES</h5>
+      <div class="underlinebranches"></div>
+      <p style="padding-top:2%;" class="BranchTitle">Discover the Citi Bank difference by visiting us and experiencing superior banking services firsthand!</p>
+      <div class="wrapper">
+        <input checked type=radio name="slider" id="slide1" />
+        <input type=radio name="slider" id="slide2" />
+        <input type=radio name="slider" id="slide3" />
+        <input type=radio name="slider" id="slide4" />
+        <input type=radio name="slider" id="slide5" />
+        <div class="slider-wrapper">
+          <div class="innerca2">
+            <article>
+              <div class="info top-left">
+                <h3>Dubai</h3></div>
+              <img src="images/DUBAI.jpeg" />
+            </article>
+            <article>
+              <div class="info bottom-right">
+                <h3>Los Angeles</h3></div>
+              <img src="images/LA.jpg" />
+            </article>
+            <article>
+              <div class="info bottom-left">
+                <h3>China</h3></div>
+              <img src="images/China.jpg" />
+            </article>
+            <article>
+              <div class="info top-right">
+                <h3>Singapore</h3></div>
+              <img src="images/Singapore.jpeg" />
+              </article>
+            <article>
+              <div class="info bottom-left">
+                <h3>London</h3></div>
+              <img src="images/London.jpeg" />
+            </article>
+          </div>
+          <!-- .inner -->
+        </div>
+        <!-- .slider-wrapper -->
+        <div class="slider-prev-next-control">
+          <label for=slide1></label>
+          <label for=slide2></label>
+          <label for=slide3></label>
+          <label for=slide4></label>
+          <label for=slide5></label>
+        </div>
+        <!-- .slider-prev-next-control -->
+        <div class="slider-dot-control">
+          <label for=slide1></label>
+          <label for=slide2></label>
+          <label for=slide3></label>
+          <label for=slide4></label>
+          <label for=slide5></label>
+        </div>
+        <!-- .slider-dot-control -->
+      </div>
+    </div>
+  </section>
+
+
+  <!--Contact Us-->
+  <section id="ContactSection" style="align-items: center; display:flex; justify-content: center;">
+    <div class="contact-container" id="#ContactSection">
+      <h2 style="color:#5b828e; font-family:'Mitr';">GET IN TOUCH</h2>
+      <h2 style="color:#ac7e62;; font-family:'Markazi Text'; font-size:25px;" > <i class="fa fa-phone" aria-hidden="true"></i> Phone:+971501248718 </h2>
+      <h2 style="color:#ac7e62;; font-family:'Markazi Text'; font-size:25px;" ><i class="fa fa-envelope" aria-hidden="true"></i> Email: Citibank@gmail.com</h2>
+      <h2 style="color:#ac7e62;; font-family:'Markazi Text'; font-size:25px;"> <i class="fa fa-map-marker" aria-hidden="true"></i> Location: <a style="color:#ac7e62;" target="_blank"  href="https://www.google.com/maps/place/Citibank+%E2%80%93+Al+Wasl+Branch/@25.2269746,55.3191024,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f4287e4c44c8b:0xdfa5c8217d13cbeb!8m2!3d25.2269698!4d55.3216773!16s%2Fg%2F11b7m96spv?entry=ttu">Wasl Branch, Dubai</a> </h2>
+      <p>
+        Feel free to get in touch with us with anything related to CITI Bank. We will get back to you as soon as possible.
+      </p>
+      <form id="form">
+        <div class="wrapper">
+          <input type="text" placeholder="Your name" required/>
+          <div class="gradient-bg"></div>
+        </div>
+        <div class="wrapper">
+          <input type="email" placeholder="Email address" required/>
+          <div class="gradient-bg"></div>
+        </div>
+        <div class="wrapper">
+          <input type="text" placeholder="Subject" required>
+          <div class="gradient-bg"></div>
+        </div>
+        <div class="wrapper wrapper-big">
+          <textarea placeholder="Message" required></textarea>
+          <div class="gradient-bg"></div>
+        </div>
+        <button>Send</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+
+    const form = document.getElementById('form');
+    const container = document.querySelector('.contact-container');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      container.innerHTML = '<p>Thanks for your message. <br /> We will get back to you soon. </p>';
+    });
+
+    const floating_btn = document.querySelector('.floating-btn');
+    const close_btn = document.querySelector('.close-btn');
+    const social_panel_container = document.querySelector('.social-panel-container');
+
+    floating_btn.addEventListener('click', () => {
+      social_panel_container.classList.toggle('visible')
+    });
+
+    close_btn.addEventListener('click', () => {
+      social_panel_container.classList.remove('visible')
+    });
+    
+</script>
+
+
+
+
+<!--Footer-->
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <h5 style="font-size:32px;">CITI Bank</h5>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4></h4>
+          <ul class="list-unstyled">
+            <li><a href="#"></a></li>
+            <li><a href="#">Payment Center</a></li>
+            <li><a href="#">Contact Directory</a></li>
+            <li><a href="#">Forms</a></li>
+            <li><a href="#">News and Updates</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4></h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Website Tutorial</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Webmaster</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4></h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Parks and Recreation</a></li>
+            <li><a href="#">Public Works</a></li>
+            <li><a href="#">Police Department</a></li>
+            <li><a href="#">Fire</a></li>
+            <li><a href="#">Mayor and City Council</a></li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    	<div class="col-md-3">
+    		<h4>Follow Us</h4>
+            <ul class="social-network social-circle">
+             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+            </ul>				
+		</div>
+    </div>
+	<div class="row">
+		<div class="col-md-12 copy">
+			<p class="text-center">&copy; Copyright 2023 - CITI Bank.  All rights reserved.</p>
+		</div>
+	</div>
+  </div>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
