@@ -2,6 +2,8 @@
 
 The webpage is for Citi Bank, a prominent global financial institution providing various financial services. Citi Bank, established in 1812, is known for its innovation and extensive global presence, operating in over 160 countries and serving millions of customers worldwide. 
 
+Tools used: HTML - CSS - JavaScript - PHP - MySQL - BootStrap
+
 ## Key Features:
 
 #### 1. Carousel
@@ -80,7 +82,7 @@ Offers ways to contact Citi Bank for support and inquiries, users can fill out a
   
 - External Libraries and Fonts: Utilizes Google Fonts, Font Awesome icons, and Bootstrap for styling and functionality.
 
-- JavaScript and jQuery: Used to implement interactive features such as the carousel, navigation bar, and dynamic content updates.
+- JavaScript: Used to implement interactive features such as the carousel, navigation bar, and dynamic content updates.
 
 - Backend Integration with PHP:
 
