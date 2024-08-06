@@ -2,7 +2,7 @@
 
 The webpage is for Citi Bank, a prominent global financial institution providing various financial services. Citi Bank, established in 1812, is known for its innovation and extensive global presence, operating in over 160 countries and serving millions of customers worldwide. 
 
-**Tools used**: HTML - CSS - JavaScript - PHP - MySQL - BootStrap
+**Technologies used**: HTML - CSS - JavaScript - PHP - MySQL - BootStrap
 
 ## Key Features:
 
