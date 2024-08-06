@@ -69,6 +69,12 @@ Offers ways to contact Citi Bank for support and inquiries, users can fill out a
 ## Technical Aspects:
 
 - Responsive Design: The website is designed to be fully responsive, ensuring optimal viewing and interaction experiences across a wide range of devices.
+
+- HTML and CSS:
+  
+     - HTML: Used for structuring the content and elements of the website.
+ 
+     - CSS: Employed for styling and layout, enhancing the visual appeal and user experience.
   
 - External Libraries and Fonts: Utilizes Google Fonts, Font Awesome icons, and Bootstrap for styling and functionality.
 
